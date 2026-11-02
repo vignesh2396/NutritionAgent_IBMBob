@@ -1,0 +1,75 @@
+﻿# ============================================================
+# NutriBot — Agentic AI Nutritionist
+# .gitignore
+# ============================================================
+
+# ── Credentials & Secrets ─────────────────────────────────
+.env
+*.key
+*.pem
+secrets.toml
+
+# ── Python ────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+wheels/
+.eggs/
+.Python
+pip-wheel-metadata/
+share/python-wheels/
+
+# ── Virtual Environments ──────────────────────────────────
+venv/
+env/
+.venv/
+.env/
+ENV/
+env.bak/
+venv.bak/
+
+# ── Streamlit ─────────────────────────────────────────────
+.streamlit/secrets.toml
+
+# ── OS Files ──────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+*~
+
+# ── IDEs & Editors ────────────────────────────────────────
+.vscode/
+*.code-workspace
+.idea/
+*.iml
+.ipynb_checkpoints
+*.ipynb
+
+# ── Logs & Temp ───────────────────────────────────────────
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*.bak
+*.orig
+
+# ── Coverage & Testing ────────────────────────────────────
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+coverage.xml
+
+# ── mypy ──────────────────────────────────────────────────
+.mypy_cache/
