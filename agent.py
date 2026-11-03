@@ -108,7 +108,7 @@ def _build_gemini_model(api_key: str) -> genai.GenerativeModel:
 
 def _build_plan_prompt(user_data: dict) -> str:
     """Construct the user message requesting a personalised nutrition plan."""
-    name        = user_data.get("name", "User")
+    name        = user_data.get("name", "User") or "User"
     age         = user_data.get("age", "unknown")
     diet_pref   = user_data.get("diet_preference", "not specified")
     med_history = user_data.get("medical_history", "none")
